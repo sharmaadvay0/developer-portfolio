@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Roboto&family=Roboto+Slab&display=swap");
+.background {
+  background-color: #24272b;
+  min-height: 100vh;
+}
+.appBar {
+  display: flex;
+  align-items: flex-end;
+}
+.text {
+  color: white;
+  font-family: "Red Hat Text";
+}
+.socialIcons {
+  position: absolute;
+  right: 0px;
+  padding-right: 25px;
+  display: flex;
+}
+.leftSocialIcon {
+  padding-right: 25px;
+}
