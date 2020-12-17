@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import "./App.css";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import "animate.css/animate.css";
 
 const App = () => {
   const theme = createMuiTheme({

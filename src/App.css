@@ -28,28 +28,34 @@
 .hello {
   order: 1;
 }
+
 .name {
   order: 2;
 }
+
 .homePageButtons {
   order: 3;
   padding-top: 50px;
   display: flex;
 }
+
 .button1 {
   order: 1;
   margin-inline-end: 10%;
 }
+
 .button2 {
   order: 2;
   width: 200px;
 }
+
 .socialIcons {
   position: absolute;
   right: 0px;
   padding-right: 25px;
   display: flex;
 }
+
 .leftSocialIcon {
   padding-right: 25px;
 }

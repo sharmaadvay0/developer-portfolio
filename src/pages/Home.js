@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <div className="hello">
+      <div className="hello animate__animated animate__fadeIn">
         <Typography style={{ color: "white", fontSize: 100 }}>
           Hello 👋
         </Typography>
       </div>
-      <div className="name">
+      <div className="name animate__animated animate__fadeIn animate__delay-1s">
         <Typography
           style={{ color: "white", fontSize: 50, textAlign: "center" }}
         >
@@ -22,7 +22,7 @@ const Home = () => {
           Developer Portfolio!
         </Typography>
       </div>
-      <div className="homePageButtons">
+      <div className="homePageButtons animate__animated animate__fadeIn animate__delay-1s">
         <div className="button1">
           <Button style={{ fontSize: 25 }} variant="contained" color="primary">
             <Link
