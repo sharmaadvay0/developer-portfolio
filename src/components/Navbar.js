@@ -12,7 +12,7 @@ const Navbar = () => {
       <CssBaseline />
       <AppBar position="static" style={{ backgroundColor: "#3E78B2" }}>
         <Toolbar>
-          <Typography style={{ fontSize: 30, fontFamily: "Red Hat Text" }}>
+          <Typography style={{ fontSize: 30 }} className="text">
             <Link to="/" style={{ color: "black", textDecoration: "none" }}>
               Advay Sharma
             </Link>
@@ -22,7 +22,6 @@ const Navbar = () => {
               marginLeft: "30px",
               marginTop: "5px",
               fontSize: 16,
-              fontFamily: "Red Hat Text",
             }}
           >
             <Link
@@ -37,7 +36,6 @@ const Navbar = () => {
               marginLeft: "30px",
               marginTop: "5px",
               fontSize: 16,
-              fontFamily: "Red Hat Text",
             }}
           >
             <Link
