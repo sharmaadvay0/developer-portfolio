@@ -5,8 +5,10 @@ import "../App.css";
 import { CssBaseline } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
+  const landscape = useMediaQuery({ query: "(orientation: landscape)" });
   return (
     <Fragment>
       <CssBaseline />
@@ -45,22 +47,24 @@ const Navbar = () => {
               About Me
             </Link>
           </Button>
-          <div className="socialIcons">
-            <div className="leftSocialIcon">
-              <SocialIcon
-                url="https://www.linkedin.com/in/advaysharma/"
-                bgColor="black"
-                fgColor="white"
-              />
+          {landscape && (
+            <div className="socialIcons">
+              <div className="leftSocialIcon">
+                <SocialIcon
+                  url="https://www.linkedin.com/in/advaysharma/"
+                  bgColor="black"
+                  fgColor="white"
+                />
+              </div>
+              <div>
+                <SocialIcon
+                  url="https://github.com/sharmaadvay0"
+                  bgColor="black"
+                  fgColor="white"
+                />
+              </div>
             </div>
-            <div>
-              <SocialIcon
-                url="https://github.com/sharmaadvay0"
-                bgColor="black"
-                fgColor="white"
-              />
-            </div>
-          </div>
+          )}
         </Toolbar>
       </AppBar>
     </Fragment>
