@@ -5,17 +5,28 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import "./App.css";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 const App = () => {
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: "#3E78B2",
+      },
+    },
+  });
+
   return (
     <div className="background">
       <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/about" component={About} />
-        </Switch>
+        <ThemeProvider theme={theme}>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </ThemeProvider>
       </Router>
     </div>
   );

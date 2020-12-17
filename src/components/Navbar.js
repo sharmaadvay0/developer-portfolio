@@ -5,14 +5,16 @@ import "../App.css";
 import { CssBaseline } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
+  const landscape = useMediaQuery({ query: "(orientation: landscape)" });
   return (
     <Fragment>
       <CssBaseline />
       <AppBar position="static" style={{ backgroundColor: "#3E78B2" }}>
         <Toolbar>
-          <Typography style={{ fontSize: 30, fontFamily: "Red Hat Text" }}>
+          <Typography style={{ fontSize: 30 }} className="text">
             <Link to="/" style={{ color: "black", textDecoration: "none" }}>
               Advay Sharma
             </Link>
@@ -22,7 +24,6 @@ const Navbar = () => {
               marginLeft: "30px",
               marginTop: "5px",
               fontSize: 16,
-              fontFamily: "Red Hat Text",
             }}
           >
             <Link
@@ -37,7 +38,6 @@ const Navbar = () => {
               marginLeft: "30px",
               marginTop: "5px",
               fontSize: 16,
-              fontFamily: "Red Hat Text",
             }}
           >
             <Link
@@ -47,22 +47,24 @@ const Navbar = () => {
               About Me
             </Link>
           </Button>
-          <div className="socialIcons">
-            <div className="leftSocialIcon">
-              <SocialIcon
-                url="https://www.linkedin.com/in/advaysharma/"
-                bgColor="black"
-                fgColor="white"
-              />
+          {landscape && (
+            <div className="socialIcons">
+              <div className="leftSocialIcon">
+                <SocialIcon
+                  url="https://www.linkedin.com/in/advaysharma/"
+                  bgColor="black"
+                  fgColor="white"
+                />
+              </div>
+              <div>
+                <SocialIcon
+                  url="https://github.com/sharmaadvay0"
+                  bgColor="black"
+                  fgColor="white"
+                />
+              </div>
             </div>
-            <div>
-              <SocialIcon
-                url="https://github.com/sharmaadvay0"
-                bgColor="black"
-                fgColor="white"
-              />
-            </div>
-          </div>
+          )}
         </Toolbar>
       </AppBar>
     </Fragment>
