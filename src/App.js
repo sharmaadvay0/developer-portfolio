@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -7,6 +8,7 @@ import About from "./pages/About";
 import "./App.css";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "animate.css/animate.css";
+import { Context } from "./components/Context";
 
 const App = () => {
   const theme = createMuiTheme({
@@ -17,17 +19,23 @@ const App = () => {
     },
   });
 
+  const [state, setState] = useState({
+    animation: true,
+  });
+
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/about" component={About} />
-        </Switch>
-      </ThemeProvider>
-    </Router>
+    <Context.Provider value={{ state, setState }}>
+      <Router>
+        <ThemeProvider theme={theme}>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </ThemeProvider>
+      </Router>
+    </Context.Provider>
   );
 };
 
