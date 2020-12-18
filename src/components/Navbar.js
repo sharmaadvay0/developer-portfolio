@@ -52,14 +52,14 @@ const Navbar = () => {
               <div className="leftSocialIcon">
                 <SocialIcon
                   url="https://www.linkedin.com/in/advaysharma/"
-                  bgColor="black"
+                  bgColor="#181818"
                   fgColor="white"
                 />
               </div>
               <div>
                 <SocialIcon
                   url="https://github.com/sharmaadvay0"
-                  bgColor="black"
+                  bgColor="#181818"
                   fgColor="white"
                 />
               </div>

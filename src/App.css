@@ -1,12 +1,3 @@
-.background {
-  background-color: rgb(32, 32, 32);
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow: auto;
-}
 .appBar {
   display: flex;
   align-items: flex-end;
@@ -14,7 +5,11 @@
 .text {
   color: white;
 }
-
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -24,28 +19,34 @@
 .hello {
   order: 1;
 }
+
 .name {
   order: 2;
 }
+
 .homePageButtons {
   order: 3;
   padding-top: 50px;
   display: flex;
 }
+
 .button1 {
   order: 1;
   margin-inline-end: 10%;
 }
+
 .button2 {
   order: 2;
   width: 200px;
 }
+
 .socialIcons {
   position: absolute;
   right: 0px;
   padding-right: 25px;
   display: flex;
 }
+
 .leftSocialIcon {
   padding-right: 25px;
 }
