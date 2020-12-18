@@ -18,18 +18,16 @@ const App = () => {
   });
 
   return (
-    <div className="background">
-      <Router>
-        <ThemeProvider theme={theme}>
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/about" component={About} />
-          </Switch>
-        </ThemeProvider>
-      </Router>
-    </div>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </ThemeProvider>
+    </Router>
   );
 };
 
