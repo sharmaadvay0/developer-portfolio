@@ -9,8 +9,8 @@ const Home = () => {
   useEffect(() => {
     if (state.animation) {
       setTimeout(() => {
-        setState({ animation: false });
-      }, 1500);
+        setState({ ...state, animation: false });
+      }, 2000);
     }
   }, []);
 
