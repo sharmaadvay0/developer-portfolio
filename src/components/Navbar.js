@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <CssBaseline />
-      <AppBar position="static" style={{ backgroundColor: "#3E78B2" }}>
+      <AppBar position="sticky" style={{ backgroundColor: "#3E78B2" }}>
         <Toolbar>
           <Typography style={{ fontSize: 30 }} className="text">
             <Link to="/" style={{ color: "black", textDecoration: "none" }}>
