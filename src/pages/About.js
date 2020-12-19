@@ -90,15 +90,49 @@ const About = () => {
               </Typography>
             </div>
           </Card>
-          <div style={{ display: "flex" }}>
-            <div style={{ order: 1 }}></div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "2.5%",
+            }}
+          >
             <div
               style={{
-                order: 2,
                 display: "flex",
                 flexDirection: "column",
-                alignContent: "center",
-                marginRight: "30%",
+                alignItems: "center",
+                marginRight: "5%",
+                width: "300px",
+                paddingBottom: "2%",
+              }}
+            >
+              <Typography
+                style={{
+                  color: "white",
+                  fontSize: 25,
+                  textAlign: "center",
+                }}
+              >
+                Tools and Technologies
+              </Typography>
+              <ul>
+                <li style={{ color: "white", fontSize: 20 }}>AWS</li>
+                <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
+                <li style={{ color: "white", fontSize: 20 }}>React</li>
+                <li style={{ color: "white", fontSize: 20 }}>Express</li>
+                <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
+                <li style={{ color: "white", fontSize: 20 }}>Git</li>
+                <li style={{ color: "white", fontSize: 20 }}>Apache Kafka</li>
+                <li style={{ color: "white", fontSize: 20 }}>PostgreSQL</li>
+                <li style={{ color: "white", fontSize: 20 }}>Redux</li>
+              </ul>
+            </div>
+            <div
+              style={{
+                marginLeft: "5%",
+                width: "20%",
               }}
             >
               <Typography
@@ -121,26 +155,6 @@ const About = () => {
               </Typography>
             </div>
           </div>
-          <Typography
-            style={{
-              color: "white",
-              fontSize: 20,
-              paddingTop: "2.5%",
-            }}
-          >
-            Tools and Technologies I've used:
-          </Typography>
-          <ul>
-            <li style={{ color: "white", fontSize: 20 }}>AWS</li>
-            <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
-            <li style={{ color: "white", fontSize: 20 }}>React</li>
-            <li style={{ color: "white", fontSize: 20 }}>Express</li>
-            <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
-            <li style={{ color: "white", fontSize: 20 }}>Git</li>
-            <li style={{ color: "white", fontSize: 20 }}>Apache Kafka</li>
-            <li style={{ color: "white", fontSize: 20 }}>MySQL</li>
-            <li style={{ color: "white", fontSize: 20 }}>Redux</li>
-          </ul>
         </Fragment>
       ) : (
         <Fragment>

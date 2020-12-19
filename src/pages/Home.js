@@ -27,7 +27,7 @@ const Home = () => {
             </Typography>
             <Typography
               style={{ color: "white", fontSize: 100, paddingLeft: "20px" }}
-              className="animate__animated animate__swing animate__delay-1s"
+              className="animate__animated animate__wobble animate__delay-1s animate__fast"
             >
               👋
             </Typography>
@@ -83,7 +83,7 @@ const Home = () => {
             </Typography>
             <Typography
               style={{ color: "white", fontSize: 100, paddingLeft: "20px" }}
-              className="animate__animated animate__swing"
+              className="animate__animated animate__wobble animate__fast"
             >
               👋
             </Typography>
