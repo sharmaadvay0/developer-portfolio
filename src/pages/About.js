@@ -1,4 +1,4 @@
-import { Card, Typography } from "@material-ui/core";
+import { Button, Card, Typography } from "@material-ui/core";
 import React, { Fragment } from "react";
 import pfp from "../images/Portrait_Cropped.jpeg";
 import { useMediaQuery } from "react-responsive";
@@ -133,6 +133,8 @@ const About = () => {
               style={{
                 marginLeft: "5%",
                 width: "20%",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
               <Typography
@@ -144,15 +146,30 @@ const About = () => {
               >
                 Profiles
               </Typography>
-              <Typography
-                style={{
-                  color: "white",
-                  fontSize: 20,
-                  paddingTop: "1%",
-                }}
+              <Button
+                style={{ fontSize: 20, marginTop: "5%", width: "150px" }}
+                variant="contained"
+                color="primary"
               >
-                Content
-              </Typography>
+                <a
+                  href="https://www.linkedin.com/in/advaysharma/"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  LinkedIn
+                </a>
+              </Button>
+              <Button
+                style={{ fontSize: 20, marginTop: "5%", width: "150px" }}
+                variant="contained"
+                color="primary"
+              >
+                <a
+                  href="https://github.com/sharmaadvay0"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Github
+                </a>
+              </Button>
             </div>
           </div>
         </Fragment>
