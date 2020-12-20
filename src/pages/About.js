@@ -121,6 +121,7 @@ const About = () => {
                 <li style={{ color: "white", fontSize: 20 }}>AWS</li>
                 <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
                 <li style={{ color: "white", fontSize: 20 }}>React</li>
+                <li style={{ color: "white", fontSize: 20 }}>React Native</li>
                 <li style={{ color: "white", fontSize: 20 }}>Express</li>
                 <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
                 <li style={{ color: "white", fontSize: 20 }}>Git</li>
@@ -159,7 +160,7 @@ const About = () => {
                 </a>
               </Button>
               <Button
-                style={{ fontSize: 20, marginTop: "5%", width: "150px" }}
+                style={{ fontSize: 20, marginTop: "10%", width: "150px" }}
                 variant="contained"
                 color="primary"
               >
@@ -234,7 +235,7 @@ const About = () => {
             <div
               style={{
                 width: "75%",
-                paddingTop: "10%",
+                paddingTop: "5%",
                 paddingBottom: "5%",
               }}
             >
@@ -242,7 +243,6 @@ const About = () => {
                 style={{
                   color: "white",
                   fontSize: 30,
-                  paddingTop: "1%",
                   textAlign: "center",
                 }}
               >
@@ -262,11 +262,9 @@ const About = () => {
               </Typography>
             </div>
           </Card>
-          <div style={{ display: "flex" }}>
-            <div style={{ order: 1 }}></div>
+          <div style={{ display: "flex", marginTop: "5%" }}>
             <div
               style={{
-                order: 2,
                 display: "flex",
                 flexDirection: "column",
                 alignContent: "center",
@@ -277,27 +275,41 @@ const About = () => {
                 style={{
                   color: "white",
                   fontSize: 25,
-                  paddingTop: "1%",
                 }}
               >
                 Profiles
               </Typography>
-              <Typography
-                style={{
-                  color: "white",
-                  fontSize: 20,
-                  paddingTop: "1%",
-                }}
+              <Button
+                style={{ fontSize: 20, marginTop: "5%", width: "150px" }}
+                variant="contained"
+                color="primary"
               >
-                Content
-              </Typography>
+                <a
+                  href="https://www.linkedin.com/in/advaysharma/"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  LinkedIn
+                </a>
+              </Button>
+              <Button
+                style={{ fontSize: 20, marginTop: "10%", width: "150px" }}
+                variant="contained"
+                color="primary"
+              >
+                <a
+                  href="https://github.com/sharmaadvay0"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Github
+                </a>
+              </Button>
             </div>
           </div>
           <Typography
             style={{
               color: "white",
               fontSize: 20,
-              paddingTop: "2.5%",
+              marginTop: "5%",
             }}
           >
             Tools and Technologies I've used:
@@ -306,6 +318,7 @@ const About = () => {
             <li style={{ color: "white", fontSize: 20 }}>AWS</li>
             <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
             <li style={{ color: "white", fontSize: 20 }}>React</li>
+            <li style={{ color: "white", fontSize: 20 }}>React Native</li>
             <li style={{ color: "white", fontSize: 20 }}>Express</li>
             <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
             <li style={{ color: "white", fontSize: 20 }}>Git</li>
