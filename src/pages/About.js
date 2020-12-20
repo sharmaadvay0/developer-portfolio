@@ -24,7 +24,7 @@ const About = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 marginRight: "5%",
-                width: "300px",
+                width: "335px",
                 paddingTop: "2%",
                 paddingBottom: "2%",
               }}
@@ -104,7 +104,7 @@ const About = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 marginRight: "5%",
-                width: "300px",
+                width: "335px",
                 paddingBottom: "2%",
               }}
             >
@@ -115,9 +115,13 @@ const About = () => {
                   textAlign: "center",
                 }}
               >
-                Tools and Technologies
+                Languages and Technologies
               </Typography>
               <ul>
+                <li style={{ color: "white", fontSize: 20 }}>Java</li>
+                <li style={{ color: "white", fontSize: 20 }}>JavaScript</li>
+                <li style={{ color: "white", fontSize: 20 }}>Python</li>
+                <li style={{ color: "white", fontSize: 20 }}>Swift</li>
                 <li style={{ color: "white", fontSize: 20 }}>AWS</li>
                 <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
                 <li style={{ color: "white", fontSize: 20 }}>React</li>
@@ -275,6 +279,7 @@ const About = () => {
                 style={{
                   color: "white",
                   fontSize: 25,
+                  textAlign: "center",
                 }}
               >
                 Profiles
@@ -292,7 +297,7 @@ const About = () => {
                 </a>
               </Button>
               <Button
-                style={{ fontSize: 20, marginTop: "10%", width: "150px" }}
+                style={{ fontSize: 20, marginTop: "15%", width: "150px" }}
                 variant="contained"
                 color="primary"
               >
@@ -312,9 +317,13 @@ const About = () => {
               marginTop: "5%",
             }}
           >
-            Tools and Technologies I've used:
+            Languages and Technologies
           </Typography>
           <ul>
+            <li style={{ color: "white", fontSize: 20 }}>Java</li>
+            <li style={{ color: "white", fontSize: 20 }}>JavaScript</li>
+            <li style={{ color: "white", fontSize: 20 }}>Python</li>
+            <li style={{ color: "white", fontSize: 20 }}>Swift</li>
             <li style={{ color: "white", fontSize: 20 }}>AWS</li>
             <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
             <li style={{ color: "white", fontSize: 20 }}>React</li>
