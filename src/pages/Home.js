@@ -9,8 +9,8 @@ const Home = () => {
   useEffect(() => {
     if (state.animation) {
       setTimeout(() => {
-        setState({ animation: false });
-      }, 1500);
+        setState({ ...state, animation: false });
+      }, 2000);
     }
   }, []);
 
@@ -18,9 +18,18 @@ const Home = () => {
     <div className="home">
       {state.animation ? (
         <Fragment>
-          <div className="hello animate__animated animate__fadeIn animate__slow">
+          <div
+            className="hello animate__animated animate__fadeIn animate__slow"
+            style={{ display: "flex" }}
+          >
             <Typography style={{ color: "white", fontSize: 100 }}>
-              Hello 👋
+              Hello
+            </Typography>
+            <Typography
+              style={{ color: "white", fontSize: 100, paddingLeft: "20px" }}
+              className="animate__animated animate__wobble animate__delay-1s animate__fast"
+            >
+              👋
             </Typography>
           </div>
           <div className="name animate__animated animate__fadeIn animate__delay-1s">
@@ -68,9 +77,15 @@ const Home = () => {
         </Fragment>
       ) : (
         <Fragment>
-          <div className="hello">
+          <div className="hello" style={{ display: "flex" }}>
             <Typography style={{ color: "white", fontSize: 100 }}>
-              Hello 👋
+              Hello
+            </Typography>
+            <Typography
+              style={{ color: "white", fontSize: 100, paddingLeft: "20px" }}
+              className="animate__animated animate__wobble animate__fast"
+            >
+              👋
             </Typography>
           </div>
           <div className="name">
