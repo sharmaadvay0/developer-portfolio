@@ -1,5 +1,5 @@
-import { Card, CardContent, Typography } from "@material-ui/core";
 import React, { Fragment } from "react";
+import Project from "../components/Project";
 
 const Projects = () => {
   return (
@@ -11,29 +11,8 @@ const Projects = () => {
           marginTop: "10%",
         }}
       >
-        <Card
-          style={{
-            backgroundColor: "#2a2a2a",
-            width: "33%",
-            marginRight: "50px",
-          }}
-        >
-          <CardContent>
-            <Typography style={{ color: "white" }}>Project</Typography>
-          </CardContent>
-        </Card>
-        <Card
-          style={{
-            backgroundColor: "#2a2a2a",
-            width: "33%",
-          }}
-        >
-          <CardContent>
-            <Typography style={{ color: "white" }}>Project</Typography>
-          </CardContent>
-        </Card>
+        <Project title="test" description="" githubLink="" imgPath="" />
       </div>
-
       <div
         style={{
           display: "flex",
@@ -41,27 +20,8 @@ const Projects = () => {
           marginTop: "10%",
         }}
       >
-        <Card
-          style={{
-            backgroundColor: "#2a2a2a",
-            width: "33%",
-            marginRight: "50px",
-          }}
-        >
-          <CardContent>
-            <Typography style={{ color: "white" }}>Project</Typography>
-          </CardContent>
-        </Card>
-        <Card
-          style={{
-            backgroundColor: "#2a2a2a",
-            width: "33%",
-          }}
-        >
-          <CardContent>
-            <Typography style={{ color: "white" }}>Project</Typography>
-          </CardContent>
-        </Card>
+        <Project title="test2" description="" githubLink="" imgPath="" />
+        <Project title="test3" description="" githubLink="" imgPath="" />
       </div>
     </Fragment>
   );
