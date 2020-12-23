@@ -8,7 +8,14 @@ import {
   Typography,
 } from "@material-ui/core";
 
-const Project = ({ title, description, githubLink, imgPath, imageFit }) => {
+const Project = ({
+  title,
+  description,
+  githubLink,
+  imgPath,
+  imageFit,
+  techUsed,
+}) => {
   return (
     <Fragment>
       {imageFit ? (
@@ -32,12 +39,24 @@ const Project = ({ title, description, githubLink, imgPath, imageFit }) => {
             >
               {description}
             </Typography>
+            <Typography
+              style={{ color: "white", fontSize: 17, paddingTop: "4%" }}
+            >
+              {techUsed}
+            </Typography>
           </CardContent>
           <CardActions>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ marginBottom: "2%", marginLeft: "1%" }}
+            >
               <a
                 href={githubLink}
-                style={{ color: "white", textDecoration: "none" }}
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                }}
               >
                 View On GitHub
               </a>
