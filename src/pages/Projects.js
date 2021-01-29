@@ -19,6 +19,22 @@ const Projects = () => {
         }}
       >
         <Project
+          title="ACM Visualization"
+          description="Visualize event data"
+          githubLink="https://github.com/acmucsd/sp-cerulean"
+          imgPath="/images/"
+          techUsed="Used: "
+          imageFit={imageFit}
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2.5%",
+        }}
+      >
+        <Project
           title="Course Planner"
           description="This project helps students create and store their college course plans. It includes an encrypted login and registration system, a dashboard for viewing saved plans, and an interface for creating and editing a plan. While editing a plan, the user can optionally add a fifth year and summer courses. The website also gives warnings or errors based on the number of units the student is taking per quarter."
           githubLink="https://github.com/Course-Planner-UCSD/CoursePlanner"
@@ -27,22 +43,23 @@ const Projects = () => {
           imageFit={imageFit}
         />
       </div>
-      {/* <div
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
           marginTop: "2.5%",
+          marginBottom: "3%",
         }}
       >
         <Project
-          title=""
+          title="MCHS Events"
           description=""
           githubLink=""
           imgPath="/images/"
-          techUsed=""
+          techUsed="Used: "
           imageFit={imageFit}
         />
-      </div> */}
+      </div>
     </Fragment>
   );
 };

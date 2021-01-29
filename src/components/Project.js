@@ -46,21 +46,23 @@ const Project = ({
             </Typography>
           </CardContent>
           <CardActions>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginBottom: "2%", marginLeft: "1%" }}
-            >
-              <a
-                href={githubLink}
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
+            {githubLink !== "" && (
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginBottom: "2%", marginLeft: "1%" }}
               >
-                View On GitHub
-              </a>
-            </Button>
+                <a
+                  href={githubLink}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  View On GitHub
+                </a>
+              </Button>
+            )}
           </CardActions>
         </Card>
       ) : (
@@ -86,17 +88,19 @@ const Project = ({
             </Typography>
           </CardContent>
           <CardActions>
-            <Button variant="contained" color="primary">
-              <a
-                href={githubLink}
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                View On GitHub
-              </a>
-            </Button>
+            {githubLink !== "" && (
+              <Button variant="contained" color="primary">
+                <a
+                  href={githubLink}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  View On GitHub
+                </a>
+              </Button>
+            )}
           </CardActions>
         </Card>
       )}
