@@ -118,10 +118,6 @@ const About = () => {
                 Languages and Technologies
               </Typography>
               <ul>
-                <li style={{ color: "white", fontSize: 20 }}>Java</li>
-                <li style={{ color: "white", fontSize: 20 }}>JavaScript</li>
-                <li style={{ color: "white", fontSize: 20 }}>Python</li>
-                <li style={{ color: "white", fontSize: 20 }}>Swift</li>
                 <li style={{ color: "white", fontSize: 20 }}>AWS</li>
                 <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
                 <li style={{ color: "white", fontSize: 20 }}>React</li>
@@ -129,9 +125,18 @@ const About = () => {
                 <li style={{ color: "white", fontSize: 20 }}>Express</li>
                 <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
                 <li style={{ color: "white", fontSize: 20 }}>Git</li>
+                <li style={{ color: "white", fontSize: 20 }}>GitHub</li>
                 <li style={{ color: "white", fontSize: 20 }}>Apache Kafka</li>
                 <li style={{ color: "white", fontSize: 20 }}>PostgreSQL</li>
                 <li style={{ color: "white", fontSize: 20 }}>Redux</li>
+                <li style={{ color: "white", fontSize: 20 }}>Unix</li>
+                <li style={{ color: "white", fontSize: 20 }}>Vim</li>
+                <li style={{ color: "white", fontSize: 20 }}>LaTeX</li>
+                <li style={{ color: "white", fontSize: 20 }}>
+                  Google Cloud Platform
+                </li>
+                <li style={{ color: "white", fontSize: 20 }}>Heroku</li>
+                <li style={{ color: "white", fontSize: 20 }}>JUnit</li>
               </ul>
             </div>
             <div
@@ -320,10 +325,6 @@ const About = () => {
             Languages and Technologies
           </Typography>
           <ul>
-            <li style={{ color: "white", fontSize: 20 }}>Java</li>
-            <li style={{ color: "white", fontSize: 20 }}>JavaScript</li>
-            <li style={{ color: "white", fontSize: 20 }}>Python</li>
-            <li style={{ color: "white", fontSize: 20 }}>Swift</li>
             <li style={{ color: "white", fontSize: 20 }}>AWS</li>
             <li style={{ color: "white", fontSize: 20 }}>Node.js</li>
             <li style={{ color: "white", fontSize: 20 }}>React</li>
@@ -331,9 +332,18 @@ const About = () => {
             <li style={{ color: "white", fontSize: 20 }}>Express</li>
             <li style={{ color: "white", fontSize: 20 }}>MongoDB</li>
             <li style={{ color: "white", fontSize: 20 }}>Git</li>
+            <li style={{ color: "white", fontSize: 20 }}>GitHub</li>
             <li style={{ color: "white", fontSize: 20 }}>Apache Kafka</li>
-            <li style={{ color: "white", fontSize: 20 }}>MySQL</li>
+            <li style={{ color: "white", fontSize: 20 }}>PostgreSQL</li>
             <li style={{ color: "white", fontSize: 20 }}>Redux</li>
+            <li style={{ color: "white", fontSize: 20 }}>Unix</li>
+            <li style={{ color: "white", fontSize: 20 }}>Vim</li>
+            <li style={{ color: "white", fontSize: 20 }}>LaTeX</li>
+            <li style={{ color: "white", fontSize: 20 }}>
+              Google Cloud Platform
+            </li>
+            <li style={{ color: "white", fontSize: 20 }}>Heroku</li>
+            <li style={{ color: "white", fontSize: 20 }}>JUnit</li>
           </ul>
         </Fragment>
       )}
