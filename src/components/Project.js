@@ -25,11 +25,14 @@ const Project = ({
             width: "640px",
           }}
         >
-          <CardMedia
-            image={imgPath}
-            title={title}
-            style={{ height: "349px" }}
-          />
+          {imgPath !== "" && (
+            <CardMedia
+              image={imgPath}
+              title={title}
+              style={{ height: "349px" }}
+            />
+          )}
+
           <CardContent>
             <Typography style={{ color: "white", fontSize: 35 }}>
               {title}
@@ -46,21 +49,23 @@ const Project = ({
             </Typography>
           </CardContent>
           <CardActions>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginBottom: "2%", marginLeft: "1%" }}
-            >
-              <a
-                href={githubLink}
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
+            {githubLink !== "" && (
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginBottom: "2%", marginLeft: "1%" }}
               >
-                View On GitHub
-              </a>
-            </Button>
+                <a
+                  href={githubLink}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  View On GitHub
+                </a>
+              </Button>
+            )}
           </CardActions>
         </Card>
       ) : (
@@ -70,11 +75,14 @@ const Project = ({
             width: "320px",
           }}
         >
-          <CardMedia
-            image={imgPath}
-            title={title}
-            style={{ height: "174.5px" }}
-          />
+          {imgPath !== "" && (
+            <CardMedia
+              image={imgPath}
+              title={title}
+              style={{ height: "174.5px" }}
+            />
+          )}
+
           <CardContent>
             <Typography style={{ color: "white", fontSize: 35 }}>
               {title}
@@ -86,17 +94,19 @@ const Project = ({
             </Typography>
           </CardContent>
           <CardActions>
-            <Button variant="contained" color="primary">
-              <a
-                href={githubLink}
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                View On GitHub
-              </a>
-            </Button>
+            {githubLink !== "" && (
+              <Button variant="contained" color="primary">
+                <a
+                  href={githubLink}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  View On GitHub
+                </a>
+              </Button>
+            )}
           </CardActions>
         </Card>
       )}
