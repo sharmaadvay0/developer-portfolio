@@ -20,10 +20,10 @@ const Projects = () => {
       >
         <Project
           title="ACM Visualization"
-          description="Visualize event data"
+          description="ACM Visualization is a full-stack web application that shows event analytics for ACM, an organization within UC San Diego. This application displays a heatmap and line chart for event attendance, a bar graph for mean and median ACM points of attendees, and a pie chart for the distribution of events for ACM sub-organizations."
           githubLink="https://github.com/acmucsd/sp-cerulean"
-          imgPath="/images/"
-          techUsed="Used: "
+          imgPath="/images/acm_visualization.png"
+          techUsed="Used: JavaScript, PostgreSQL, Express, React, Node.js, Git, Heroku"
           imageFit={imageFit}
         />
       </div>
@@ -36,7 +36,7 @@ const Projects = () => {
       >
         <Project
           title="Course Planner"
-          description="This project helps students create and store their college course plans. It includes an encrypted login and registration system, a dashboard for viewing saved plans, and an interface for creating and editing a plan. While editing a plan, the user can optionally add a fifth year and summer courses. The website also gives warnings or errors based on the number of units the student is taking per quarter."
+          description="Course Planner is a full-stack web application that helps students create and store their college course plans. It includes an encrypted login and registration system, a dashboard for viewing saved plans, and an interface for creating and editing a plan. While editing a plan, the user can optionally add a fifth year and summer courses. The website also gives warnings or errors based on the number of units the student is taking per quarter."
           githubLink="https://github.com/Course-Planner-UCSD/CoursePlanner"
           imgPath="/images/coursePlanner.jpg"
           techUsed="Used: JavaScript, MongoDB, Express, React, Node.js, Redux, Git"
@@ -53,10 +53,10 @@ const Projects = () => {
       >
         <Project
           title="MCHS Events"
-          description=""
+          description="MCHS Events is an iOS app that displays Moreau Catholic High School's events. It displayed these events in a daily and weekly view."
           githubLink=""
-          imgPath="/images/"
-          techUsed="Used: "
+          imgPath=""
+          techUsed="Used: Swift, PHP, JavaScript"
           imageFit={imageFit}
         />
       </div>

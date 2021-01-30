@@ -25,11 +25,14 @@ const Project = ({
             width: "640px",
           }}
         >
-          <CardMedia
-            image={imgPath}
-            title={title}
-            style={{ height: "349px" }}
-          />
+          {imgPath !== "" && (
+            <CardMedia
+              image={imgPath}
+              title={title}
+              style={{ height: "349px" }}
+            />
+          )}
+
           <CardContent>
             <Typography style={{ color: "white", fontSize: 35 }}>
               {title}
@@ -72,11 +75,14 @@ const Project = ({
             width: "320px",
           }}
         >
-          <CardMedia
-            image={imgPath}
-            title={title}
-            style={{ height: "174.5px" }}
-          />
+          {imgPath !== "" && (
+            <CardMedia
+              image={imgPath}
+              title={title}
+              style={{ height: "174.5px" }}
+            />
+          )}
+
           <CardContent>
             <Typography style={{ color: "white", fontSize: 35 }}>
               {title}
