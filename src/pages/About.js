@@ -12,7 +12,7 @@ const About = () => {
           <Card
             style={{
               backgroundColor: "#2a2a2a",
-              width: "100%",
+              width: "75%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

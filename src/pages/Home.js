@@ -2,6 +2,7 @@ import React, { Fragment, useContext, useEffect } from "react";
 import { Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { Context } from "../components/Context";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 const Home = () => {
   const { state, setState } = useContext(Context);
@@ -51,12 +52,12 @@ const Home = () => {
                 variant="contained"
                 color="primary"
               >
-                <Link
+                {/* <Link
                   to="/projects"
                   style={{ color: "black", textDecoration: "none" }}
-                >
-                  Projects
-                </Link>
+                > */}
+                Projects
+                {/* </Link> */}
               </Button>
             </div>
             <div className="button2">
@@ -65,15 +66,25 @@ const Home = () => {
                 variant="contained"
                 color="primary"
               >
-                <Link
+                {/* <Link
                   to="/about"
                   style={{ color: "black", textDecoration: "none" }}
-                >
-                  About Me
-                </Link>
+                > */}
+                About Me
+                {/* </Link> */}
               </Button>
             </div>
           </div>
+          <div className="scrollDown animate__animated animate__fadeIn animate__delay-1s">
+            <Typography style={{ color: "white", fontSize: 20 }}>
+              Scroll Down
+            </Typography>
+          </div>
+          <ArrowDownwardIcon
+            style={{ color: "white", order: 4 }}
+            fontSize="large"
+            className="animate__animated animate__fadeIn animate__delay-1s"
+          />
         </Fragment>
       ) : (
         <Fragment>
@@ -107,12 +118,12 @@ const Home = () => {
                 variant="contained"
                 color="primary"
               >
-                <Link
+                {/* <Link
                   to="/projects"
                   style={{ color: "black", textDecoration: "none" }}
-                >
-                  Projects
-                </Link>
+                > */}
+                Projects
+                {/* </Link> */}
               </Button>
             </div>
             <div className="button2">
@@ -121,15 +132,24 @@ const Home = () => {
                 variant="contained"
                 color="primary"
               >
-                <Link
+                {/* <Link
                   to="/about"
                   style={{ color: "black", textDecoration: "none" }}
-                >
-                  About Me
-                </Link>
+                > */}
+                About Me
+                {/* </Link> */}
               </Button>
             </div>
           </div>
+          <div className="scrollDown">
+            <Typography style={{ color: "white", fontSize: 20 }}>
+              Scroll Down
+            </Typography>
+          </div>
+          <ArrowDownwardIcon
+            style={{ color: "white", order: 4 }}
+            fontSize="large"
+          />
         </Fragment>
       )}
     </div>

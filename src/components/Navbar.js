@@ -14,10 +14,10 @@ const Navbar = () => {
       <CssBaseline />
       <AppBar position="sticky" style={{ backgroundColor: "#3E78B2" }}>
         <Toolbar>
-          <Typography style={{ fontSize: 30 }} className="text">
-            <Link to="/" style={{ color: "black", textDecoration: "none" }}>
-              Advay Sharma
-            </Link>
+          <Typography style={{ fontSize: 30, color: "black" }} className="text">
+            {/* <Link to="/" style={{ color: "black", textDecoration: "none" }}> */}
+            Advay Sharma
+            {/* </Link> */}
           </Typography>
           <Button
             style={{
@@ -26,12 +26,12 @@ const Navbar = () => {
               fontSize: 16,
             }}
           >
-            <Link
+            {/* <Link
               to="/projects"
               style={{ color: "black", textDecoration: "none" }}
-            >
-              Projects
-            </Link>
+            > */}
+            Projects
+            {/* </Link> */}
           </Button>
           <Button
             style={{
@@ -40,12 +40,12 @@ const Navbar = () => {
               fontSize: 16,
             }}
           >
-            <Link
+            {/* <Link
               to="/about"
               style={{ color: "black", textDecoration: "none" }}
-            >
-              About Me
-            </Link>
+            > */}
+            About Me
+            {/* </Link> */}
           </Button>
           {landscape && (
             <div className="socialIcons">

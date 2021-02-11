@@ -25,16 +25,19 @@ const App = () => {
 
   return (
     <Context.Provider value={{ state, setState }}>
-      <Router>
-        <ThemeProvider theme={theme}>
-          <Navbar />
-          <Switch>
+      {/* <Router> */}
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Home />
+        <Projects />
+        <About />
+        {/* <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/about" component={About} />
-          </Switch>
-        </ThemeProvider>
-      </Router>
+          </Switch> */}
+      </ThemeProvider>
+      {/* </Router> */}
     </Context.Provider>
   );
 };
