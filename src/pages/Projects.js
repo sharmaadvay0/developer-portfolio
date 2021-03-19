@@ -20,7 +20,7 @@ const Projects = () => {
       >
         <Project
           title="Community"
-          description="Worked in a team of four on afull-stack web applicationthat enables users to add reports for issuespresent in their local community."
+          description="Worked in a team of four on a full-stack web application that enables users to add reports for issues present in their local community."
           githubLink="https://github.com/Hackathon-Squad/Community"
           imgPath="/images/community.png"
           techUsed="JavaScript, Mapbox, Google Cloud Firestore, Google Cloud Storage, Express, React, Node.js"
