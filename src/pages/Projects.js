@@ -19,6 +19,38 @@ const Projects = () => {
         }}
       >
         <Project
+          title="Your Clear Way"
+          description="Currently working in a team of 8 in Triton Software Engineering for a non-profit organization to develop a mobile application that helps users greenify their homes through gamification. "
+          imgPath=""
+          githubLink="https://github.com/TritonSE/YCW-Green-Home-Application"
+          techUsed="Using: React Native, AWS Amplify, AWS Lambda, AWS AppSync, AWS DynamoDB, AWS Cognito"
+          imageFit={imageFit}
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2.5%",
+        }}
+      >
+        <Project
+          title="Gratitude"
+          description="Worked in a team of four on a iOS app that enables users to post about their mood. The application used Google Cloud NLP to determine a mood percentage and provide analytics such as mood percentage over time."
+          imgPath="/images/Gratitude.png"
+          githubLink="https://github.com/sharmaadvay0/Gratitude"
+          techUsed="Used: Swift, Python, Flask, SwiftUI, Google Cloud Natural Language API, Google Cloud Firestore"
+          imageFit={imageFit}
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2.5%",
+        }}
+      >
+        <Project
           title="Community"
           description="Worked in a team of four on a full-stack web application that enables users to add reports for issues present in their local community."
           githubLink="https://github.com/Hackathon-Squad/Community"
