@@ -1,6 +1,6 @@
 import { Button, Card, Typography } from "@material-ui/core";
 import React, { Fragment } from "react";
-import pfp from "../images/Portrait_Cropped.jpeg";
+import pfp from "../images/pfp.jpg";
 import { useMediaQuery } from "react-responsive";
 
 const About = () => {
@@ -35,6 +35,7 @@ const About = () => {
                 style={{
                   width: "200px",
                   borderRadius: "50%",
+                  height: "200px",
                 }}
               />
               <Typography
