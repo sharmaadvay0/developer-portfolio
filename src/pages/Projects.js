@@ -19,11 +19,28 @@ const Projects = () => {
         }}
       >
         <Project
+          title="Rock-Paper-Scissors-AI"
+          description="Implemented an AI-based rock-paper-scissors game by training a CNN to classify rock, paper or scissors hand gestures with 99% accuracy and an RNN to predict the user's next move with 62% accuracy. In practice, the CNN classifies nearly perfectly and the RNN beats the user fairly consistently."
+          imgPath="/images/rock_paper_scissors_game.png"
+          githubLink="https://github.com/sharmaadvay0/RockPaperScissors"
+          techUsed="Used: PyTorch, OpenCV, NumPy, Matplotlib"
+          imageFit={imageFit}
+        />
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "3%",
+        }}
+      >
+        <Project
           title="Your Clear Way"
-          description="Currently working in a team of 8 in Triton Software Engineering for a non-profit organization to develop a mobile application that helps users greenify their homes through gamification. "
+          description="Worked in a team of 8 in Triton Software Engineering for a non-profit organization to develop a mobile application that helps users greenify their homes through gamification. "
           imgPath=""
           githubLink="https://github.com/TritonSE/YCW-Green-Home-Application"
-          techUsed="Using: React Native, AWS Amplify, AWS Lambda, AWS AppSync, AWS DynamoDB, AWS Cognito"
+          techUsed="Used: React Native, AWS Amplify, AWS Lambda, AWS AppSync, AWS DynamoDB, AWS Cognito"
           imageFit={imageFit}
         />
       </div>
